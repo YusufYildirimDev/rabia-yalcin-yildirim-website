@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Rabia Yalçın Yıldırım - Psikolojik Danışman | Psikolojik Danışmanlık</title>
+  <meta name="description" content="Rabia Yalçın Yıldırım - Uzman Psikolojik Danışman. Bireysel danışmanlık, çift ve ilişki danışmanlığı, ergen danışmanlığı ve online terapi hizmetleri. İçsel yolculuğunuzda güvenli alan.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Feather / Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main & Modular Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Backdrop -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- Mobile Navigation Drawer (Rendered outside header to avoid flex layout collisions) -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-name" style="font-size: 1.1rem;">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title" style="font-size: 0.65rem;">Psikolojik Danışman</span>
+      </div>
+      <button id="close-mobile-menu" style="background: none; border: none; font-size: 1.4rem; color: var(--text-main); cursor: pointer;" aria-label="Menüyü Kapat">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <a href="index.html" class="nav-link mobile-link">Anasayfa</a>
+    <a href="hakkimda.html" class="nav-link mobile-link">Hakkımda</a>
+    <a href="calisma-alanlarim.html" class="nav-link mobile-link">Çalışma Alanlarım</a>
+    <a href="blog.html" class="nav-link mobile-link">Blog</a>
+    <a href="videolar.html" class="nav-link mobile-link">Videolar</a>
+    <a href="iletisim.html" class="nav-link mobile-link">İletişim</a>
+    <button class="btn btn-primary open-appointment-btn" style="width: 100%; margin-top: 1rem;">
+      <i data-lucide="calendar"></i>
+      <span>Randevu Al</span>
+    </button>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#anasayfa" class="logo">
+        <span class="logo-name">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title">Psikolojik Danışman</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Anasayfa</a></li>
+          <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+          <li><a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="videolar.html" class="nav-link">Videolar</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-primary open-appointment-btn" id="nav-cta-btn">
+          <i data-lucide="calendar"></i>
+          <span>Randevu Al</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Menüyü Aç">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section class="hero" id="anasayfa">
+    <div class="hero-bg-accent"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i data-lucide="sparkles" style="width: 16px; height: 16px;"></i>
+          <span>Psikolojik Danışmanlık</span>
+        </div>
+        
+        <h1 class="hero-title">
+          Değişim, <span>Anlaşıldığınızı Hissettiğiniz</span> Anda Başlar
+        </h1>
+        
+        <p class="hero-subtitle">
+          Psikolojik danışmanlık süreci; yalnızca sorunları çözmek değil, kendinizi daha yakından tanımak ve yaşam kalitenizi artırmak için güvenli bir adımdır. Bilimsel yaklaşımlar ve empati temelli destekle bu yolculukta size eşlik ediyoruz.
+        </p>
+
+        <div class="hero-actions">
+          <button class="btn btn-primary open-appointment-btn">
+            <i data-lucide="calendar"></i>
+            <span>Randevu Oluştur</span>
+          </button>
+          <a href="#hakkimda" class="btn btn-secondary">
+            <i data-lucide="user"></i>
+            <span>Hakkımda</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">4+</span>
+            <span class="stat-label">Yıllık Deneyim</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">350+</span>
+            <span class="stat-label">Danışan Seansı</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">%98</span>
+            <span class="stat-label">Memnuniyet Oranı</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image-wrapper">
+        <div class="hero-image-card">
+          <img src="assets/serene_office_hero.jpg?v=2" alt="Rabia Yalçın Yıldırım Danışmanlık Odası" loading="eager">
+        </div>
+
+        <div class="hero-floating-card glass-badge">
+          <div class="floating-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+          <div>
+            <h4 style="font-size: 0.95rem; font-weight: 700;">Gizlilik & Etik Güvence</h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">%100 Danışan Gizliliği ilkeleri</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section class="about section-padding" id="hakkimda">
+    <div class="container about-grid">
+      <div class="about-portrait-frame">
+        <div class="about-portrait-img">
+          <img src="assets/images/therapist_portrait.jpg?v=2" alt="Rabia Yalçın Yıldırım - Psikolojik Danışman">
+        </div>
+        <div class="about-quote-box glass-badge">
+          "Terapi; bireyin kendi içindeki potansiyeli ve güvenli alanı yeniden keşfetme yolculuğudur."
+        </div>
+      </div>
+
+      <div class="about-content">
+        <span class="section-subtitle">Hakkımda</span>
+        <h2 class="section-title">Rabia Yalçın Yıldırım Kimdir?</h2>
+
+        <div class="about-bio">
+          <p>
+            Psikolojik danışman ve bütüncül psikoterapi uygulayıcısı olarak, her bireyin yaşam öyküsünün ve ihtiyaçlarının kendine özgü olduğuna inanıyorum. Bu nedenle danışmanlık sürecimi, bilimsel temellere dayanan ve kişiye özel planlanan bütüncül bir yaklaşımla yürütüyorum.
+          </p>
+          <p>
+            Lisans eğitimimi Balıkesir Üniversitesi Psikolojik Danışmanlık ve Rehberlik (PDR) bölümünde tamamladıktan sonra, mesleki gelişimimi desteklemek amacıyla Psikoterapi Enstitüsü Bütüncül Psikoterapi Eğitimi'ni başarıyla tamamladım.
+          </p>
+          <p>
+            4 yılı aşkın mesleki deneyimim boyunca kaygı, depresyon, travmatik yaşam deneyimleri, ilişki sorunları, öz güven, öz değer ve yaşam krizleri gibi alanlarda danışanlarıma destek oldum.
+          </p>
+          <p>
+            Benim için terapi; kişinin kendisini güvenle ifade edebildiği, anlaşılmış hissettiği ve yaşamında kalıcı değişimlere adım attığı güvenli bir yolculuktur.
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="award"></i>
+            </div>
+            <div>
+              <h4 class="feature-title">Kanıta Dayalı Terapi</h4>
+              <p class="feature-desc">BDT ve Şema Terapi odaklı bilimsel yaklaşımlar.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="book-open"></i>
+            </div>
+            <div>
+              <h4 class="feature-title">Uzmanlık Sertifikaları</h4>
+              <p class="feature-desc">Sertifikalı EMDR Terapisti, BDT Eğitimi & Kabul/Kararlılık Terapisi</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="heart-handshake"></i>
+            </div>
+            <div>
+              <h4 class="feature-title">Empati Odaklı Yaklaşım</h4>
+              <p class="feature-desc">Her bireyin benzersiz yaşam hikayesine özel kişiselleştirilmiş süreç</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i data-lucide="globe"></i>
+            </div>
+            <div>
+              <h4 class="feature-title">Online & Yüz Yüze</h4>
+              <p class="feature-desc">İstanbul Kuzguncuk ofisinde veya online terapi seansları</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn-primary open-appointment-btn">
+          <i data-lucide="calendar"></i>
+          <span>Danışmanlık Seansı Alın</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== PRACTICE AREAS / SERVICES ==================== -->
+  <section class="services section-padding" id="calisma-alanlarim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Çalışma Alanlarım</span>
+        <h2 class="section-title">Size Özel Danışmanlık ve Terapi Hizmetleri</h2>
+        <p class="section-desc">Yaşamınızın farklı evrelerinde ihtiyaç duyduğunuz psikolojik desteğe uygun profesyonel çözümler.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="services-filter">
+        <button class="filter-btn active" data-filter="all">Tüm Hizmetler</button>
+        <button class="filter-btn" data-filter="bireysel">Bireysel Danışmanlık</button>
+        <button class="filter-btn" data-filter="cift">Çift ve İlişki</button>
+        <button class="filter-btn" data-filter="ergen">Ergen Danışmanlığı</button>
+        <button class="filter-btn" data-filter="online">Online Terapi</button>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="services-grid" id="services-container">
+        <!-- Dynamic Cards rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== BLOG SECTION ==================== -->
+  <section class="blog section-padding" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Psikoloji Rehberi & Makaleler</span>
+        <h2 class="section-title">Ruh Sağlığı ve Farkındalık Yazıları</h2>
+        <p class="section-desc">Günlük yaşamınızda rehberlik edecek bilimsel, pratik ve farkındalık dolu içerikler.</p>
+      </div>
+
+      <div class="blog-grid" id="blog-container">
+        <!-- Dynamic Blog Cards rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEOS SECTION ==================== -->
+  <section class="videos section-padding" id="videolar">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Videolar & İçerikler</span>
+        <h2 class="section-title">Görsel Rehberler ve Bilgilendirme Videoları</h2>
+        <p class="section-desc">Psikoloji, ilişki dinamikleri ve kaygı yönetimi üzerine bilgilendirici kısa videolar.</p>
+      </div>
+
+      <div class="videos-grid" id="videos-container">
+        <!-- Dynamic Video Cards rendered via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== APPOINTMENT & CONTACT ==================== -->
+  <section class="contact section-padding" id="iletisim">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">İletişim & Randevu</span>
+        <h2 class="section-title">Benimle İletişime Geçin</h2>
+        <p class="section-desc">Sorularınız, bilgi almak veya randevu oluşturmak için iletişim kanallarını kullanabilirsiniz.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Box -->
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem;">Ofis & İletişim Bilgileri</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Ofis Adresi</h4>
+              <p>Kuzguncuk Mahallesi, Üsküdar / İstanbul</p>
+              <p style="font-size: 0.85rem; color: var(--primary-sage); font-weight: 600; margin-top: 0.2rem;">(Kuzguncuk Ofis Seansları İçin Randevu Alınız)</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="phone"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Telefon & WhatsApp</h4>
+              <p><a href="tel:05395535593" style="color: inherit; text-decoration: none;">+90 (539) 553 55 93</a></p>
+              <p style="font-size: 0.85rem; color: var(--text-light);">Hafta içi: 09:00 - 19:00</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="mail"></i>
+            </div>
+            <div class="contact-text">
+              <h4>E-posta Adresi</h4>
+              <p><a href="mailto:rabiayalcin006@gmail.com" style="color: inherit; text-decoration: none;">rabiayalcin006@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i data-lucide="clock"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Çalışma Saatleri</h4>
+              <p>Pazartesi - Cumartesi: 09:00 - 19:30</p>
+              <p style="font-size: 0.85rem; color: var(--text-light);">Pazar günleri kapalıdır.</p>
+            </div>
+          </div>
+
+          <!-- Emergency Alert Notice -->
+          <div class="emergency-box">
+            <div class="emergency-title">
+              <i data-lucide="alert-triangle" style="width: 18px; height: 18px;"></i>
+              <span>Acil Durum Bildirimi</span>
+            </div>
+            <p class="emergency-desc">
+              Psikolojik danışmanlık hizmeti kriz anında acil müdahale hizmeti içermez. İntihar riski veya hayati kriz durumlarında lütfen vakit kaybetmeden <strong>112 Acil Çağrı Merkezi</strong> veya <strong>183 Sosyal Destek Hattı</strong> ile iletişime geçiniz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div style="background: var(--bg-cream); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid rgba(36, 77, 61, 0.1);">
+          <h3 style="font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem;">Mesaj Gönderin</h3>
+          
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Adınız Soyadınız *</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Örn: Ayşe Yılmaz" required>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+              <div class="form-group">
+                <label class="form-label" for="contact-email">E-posta Adresiniz *</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="ornek@email.com" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="contact-phone">Telefon Numarası</label>
+                <input type="tel" id="contact-phone" class="form-control" placeholder="0532 XXX XX XX">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Konu / Danışmanlık Türü</label>
+              <select id="contact-subject" class="form-control">
+                <option value="Bireysel Danışmanlık">Bireysel Danışmanlık</option>
+                <option value="Çift ve İlişki Danışmanlığı">Çift ve İlişki Danışmanlığı</option>
+                <option value="Ergen Danışmanlığı">Ergen Danışmanlığı</option>
+                <option value="Online Terapi">Online Terapi</option>
+                <option value="Genel Bilgi Almak İstiyorum">Genel Bilgi Almak İstiyorum</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Mesajınız *</label>
+              <textarea id="contact-message" class="form-control" placeholder="Bize iletmek istediğiniz detaylar..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i data-lucide="send"></i>
+              <span>Mesajı Gönder</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#anasayfa" class="logo">
+            <span class="logo-name" style="color: #fff;">Rabia Yalçın Yıldırım</span>
+            <span class="logo-title" style="color: var(--accent-terracotta);">Psikolojik Danışman</span>
+          </a>
+          <p>
+            Güvenli, empatik ve etik ilkeler çerçevesinde bireysel ve çift odaklı profesyonel psikolojik danışmanlık hizmeti.
+          </p>
+
+        </div>
+
+        <div>
+          <h4 class="footer-title">Hızlı Bağlantılar</h4>
+          <ul class="footer-links">
+            <li><a href="#anasayfa">Anasayfa</a></li>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#calisma-alanlarim">Çalışma Alanlarım</a></li>
+            <li><a href="#blog">Blog & Makaleler</a></li>
+            <li><a href="#videolar">Videolar</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Hizmet Alanları</h4>
+          <ul class="footer-links">
+            <li><a href="#calisma-alanlarim">Bireysel Danışmanlık</a></li>
+            <li><a href="#calisma-alanlarim">Çift & İlişki Danışmanlığı</a></li>
+            <li><a href="#calisma-alanlarim">Ergen Danışmanlığı</a></li>
+            <li><a href="#calisma-alanlarim">Online Terapi</a></li>
+            <li><a href="#calisma-alanlarim">EMDR & Travma</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Çalışma Saatleri & Bilgi</h4>
+          <p style="font-size: 0.9rem; color: #BED0C7; margin-bottom: 0.8rem;">
+            Pazartesi - Cumartesi: 09:00 - 19:30
+          </p>
+          <p style="font-size: 0.85rem; color: #92AA9E;">
+            Seanslar randevu sistemi ile gerçekleştirilmektedir. Kuzguncuk, Üsküdar şubesi.
+          </p>
+          <button class="btn btn-secondary open-appointment-btn" style="margin-top: 1.2rem; color: #fff; border-color: #92AA9E;">
+            <i data-lucide="calendar"></i>
+            <span>Hızlı Randevu</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rabia Yalçın Yıldırım. Tüm hakları saklıdır.</p>
+        <p style="font-size: 0.8rem; color: #92AA9E;">Tıbbi veya hukuki teşhis/tedavi yerine geçmez. Bilgilendirme amaçlıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== APPOINTMENT WIZARD MODAL ==================== -->
+  <div class="modal-overlay" id="appointment-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-appointment-modal" aria-label="Kapat" onclick="window.closeAllModals()">
+        <i data-lucide="x"></i>
+      </button>
+
+      <div class="modal-body" id="wizard-container"></div>
+    </div>
+  </div>
+
+  <!-- ==================== BLOG READER MODAL ==================== -->
+  <div class="modal-overlay" id="blog-modal">
+    <div class="modal-container" style="max-width: 800px;">
+      <button class="modal-close-btn" id="close-blog-modal" aria-label="Kapat">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="blog-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== VIDEO PLAYER MODAL ==================== -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-container" style="max-width: 800px;">
+      <button class="modal-close-btn" id="close-video-modal" aria-label="Kapat">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="modal-body" id="video-modal-content">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ES Module Main Script -->
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

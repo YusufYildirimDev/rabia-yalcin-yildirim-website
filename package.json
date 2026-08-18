@@ -1,0 +1,19 @@
+{
+  "name": "rabia-yalcin-yildirim-website",
+  "version": "1.0.0",
+  "description": "Rabia Yalçın Yıldırım - Uzman Psikolojik Danışmanlık Web Sitesi",
+  "main": "src/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "python3 -m http.server 8085"
+  },
+  "keywords": [
+    "psikolojik-danismanlik",
+    "terapi",
+    "bireysel-danismanlik",
+    "cift-danismanligi",
+    "online-terapi"
+  ],
+  "author": "Rabia Yalçın Yıldırım",
+  "license": "MIT"
+}

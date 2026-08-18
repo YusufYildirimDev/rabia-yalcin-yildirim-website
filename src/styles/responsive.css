@@ -1,0 +1,225 @@
+/* ==========================================================================
+   RESPONSIVE DESIGN & MOBILE TOUCH OPTIMIZATIONS
+   ========================================================================== */
+
+/* Fluid Typography & Clean Spacing */
+.hero-title {
+  font-size: clamp(2rem, 5vw + 0.5rem, 3.4rem);
+  line-height: 1.25;
+}
+
+.section-title {
+  font-size: clamp(1.75rem, 4vw + 0.2rem, 2.5rem);
+  line-height: 1.3;
+}
+
+.section-desc {
+  font-size: clamp(0.95rem, 2vw, 1.125rem);
+  line-height: 1.7;
+}
+
+/* Mobile Touch Target Standards (Min 44px height) */
+.btn, .filter-btn, .option-card, .time-slot, .nav-link, .mobile-menu-btn, .modal-close-btn {
+  min-height: 44px;
+}
+
+/* Backdrop Overlay for Mobile Drawer */
+.mobile-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 998;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.mobile-backdrop.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Media Query: Tablets & Small Laptops (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero {
+    padding-top: 8.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .hero-subtitle {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .hero-floating-card {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 1.5rem auto 0;
+    max-width: 100%;
+    width: fit-content;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+  }
+}
+
+/* Media Query: Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+    background: var(--primary-sage-light);
+    color: var(--primary-sage);
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85%;
+    max-width: 340px;
+    height: 100vh;
+    background: var(--bg-white);
+    padding: 2.5rem 1.8rem;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    transform: translateX(100%);
+    opacity: 1;
+    visibility: visible;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1001;
+  }
+
+  .mobile-menu.active {
+    transform: translateX(0);
+  }
+
+  .mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--primary-sage-glow);
+    margin-bottom: 0.5rem;
+  }
+
+  .services-grid, .blog-grid, .videos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+
+  .option-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .time-slots {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+
+  .hero-image-card img {
+    height: 360px;
+  }
+
+  .about-portrait-img img {
+    height: 400px;
+  }
+}
+
+/* Media Query: Extra Small Mobile Phones (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1.2rem;
+  }
+
+  .hero-stats {
+    flex-direction: column;
+    gap: 1.4rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .modal-body {
+    padding: 1.5rem 1.2rem;
+  }
+
+  .modal-container {
+    max-height: 95vh;
+  }
+
+  .wizard-steps {
+    gap: 0.5rem;
+  }
+
+  .step-indicator {
+    width: 28px;
+    height: 28px;
+    font-size: 0.75rem;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Videolar | Rabia Yalçın Yıldırım - Psikolojik Danışman</title>
+  <meta name="description" content="Psikolojik farkındalık, ilişki tavsiyeleri ve stres yönetimi üzerine bilgilendirici video içerikler ve söyleşiler.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Feather / Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Backdrop -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-name" style="font-size: 1.1rem;">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title" style="font-size: 0.65rem;">Psikolojik Danışman</span>
+      </div>
+      <button id="close-mobile-menu" style="background: none; border: none; font-size: 1.4rem; color: var(--text-main); cursor: pointer;" aria-label="Menüyü Kapat">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <a href="index.html" class="nav-link mobile-link">Anasayfa</a>
+    <a href="hakkimda.html" class="nav-link mobile-link">Hakkımda</a>
+    <a href="calisma-alanlarim.html" class="nav-link mobile-link">Çalışma Alanlarım</a>
+    <a href="blog.html" class="nav-link mobile-link">Blog</a>
+    <a href="videolar.html" class="nav-link mobile-link active">Videolar</a>
+    <a href="iletisim.html" class="nav-link mobile-link">İletişim</a>
+    <button class="btn btn-primary open-appointment-btn" style="width: 100%; margin-top: 1rem;">
+      <i data-lucide="calendar"></i>
+      <span>Randevu Al</span>
+    </button>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-name">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title">Psikolojik Danışman</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+          <li><a href="hakkimda.html" class="nav-link">Hakkımda</a></li>
+          <li><a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="videolar.html" class="nav-link active">Videolar</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-primary open-appointment-btn" id="nav-cta-btn">
+          <i data-lucide="calendar"></i>
+          <span>Randevu Al</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Menüyü Aç">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="hero" style="padding-top: 9.5rem; padding-bottom: 4rem; background: linear-gradient(135deg, #F9F8F6 0%, #E8EFEB 100%);">
+    <div class="container" style="text-align: center;">
+      <span class="section-subtitle">Görsel Medya Kütüphanesi</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-top: 0.5rem;">Videolar & Söyleşiler</h1>
+      <p class="section-desc" style="max-width: 680px; margin: 0 auto;">Psikoloji, ilişkiler, duygusal dayanıklılık ve stres yönetimi üzerine pratik ipuçları içeren anlatımlar.</p>
+    </div>
+  </section>
+
+  <!-- ==================== VIDEOS GRID SECTION ==================== -->
+  <section class="videos section-padding">
+    <div class="container">
+      <div class="videos-grid" id="videos-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-name" style="color: #ffffff;">Rabia Yalçın Yıldırım</span>
+          <span class="logo-title">Psikolojik Danışman</span>
+        </div>
+        <p>İçsel yolculuğunuzda güvenli, şeffaf ve profesyonel rehberlik hizmeti.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Hızlı Bağlantılar</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="calisma-alanlarim.html">Çalışma Alanlarım</a></li>
+          <li><a href="blog.html">Blog & Makaleler</a></li>
+          <li><a href="videolar.html">Videolar</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Uzmanlıklar</h4>
+        <ul class="footer-links">
+          <li><a href="calisma-alanlarim.html">Bireysel Danışmanlık</a></li>
+          <li><a href="calisma-alanlarim.html">Çift & İlişki Terapisi</a></li>
+          <li><a href="calisma-alanlarim.html">Kaygı & Stres Yönetimi</a></li>
+          <li><a href="calisma-alanlarim.html">Ergen Danışmanlığı</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">İletişim</h4>
+        <ul class="footer-links">
+          <li><i data-lucide="mail" style="width: 14px; margin-right: 6px;"></i> <a href="mailto:rabiayalcin006@gmail.com" style="color: inherit; text-decoration: none;">rabiayalcin006@gmail.com</a></li>
+          <li><i data-lucide="phone" style="width: 14px; margin-right: 6px;"></i> <a href="tel:05395535593" style="color: inherit; text-decoration: none;">+90 (539) 553 55 93</a></li>
+          <li><i data-lucide="map-pin" style="width: 14px; margin-right: 6px;"></i> Kuzguncuk, Üsküdar / İstanbul</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Rabia Yalçın Yıldırım. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Video Player Modal -->
+  <div class="modal-overlay" id="video-modal">
+    <div class="modal-container" style="max-width: 840px;">
+      <button class="modal-close-btn" id="close-video-modal">&times;</button>
+      <div class="modal-body" id="video-modal-body" style="padding: 1.5rem;"></div>
+    </div>
+  </div>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay" id="appointment-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-wizard-modal">&times;</button>
+      <div class="modal-body" id="wizard-container"></div>
+    </div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

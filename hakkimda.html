@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Hakkımda | Rabia Yalçın Yıldırım - Psikolojik Danışman</title>
+  <meta name="description" content="Uzman Psikolojik Danışman Rabia Yalçın Yıldırım hakkında bilgi edinin. Özgeçmişi, terapatik yaklaşımı, uzmanlık alanları ve akademik altyapısı.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Feather / Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="src/styles/main.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Backdrop -->
+  <div class="mobile-backdrop" id="mobile-backdrop"></div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-menu-header">
+      <div class="logo">
+        <span class="logo-name" style="font-size: 1.1rem;">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title" style="font-size: 0.65rem;">Psikolojik Danışman</span>
+      </div>
+      <button id="close-mobile-menu" style="background: none; border: none; font-size: 1.4rem; color: var(--text-main); cursor: pointer;" aria-label="Menüyü Kapat">
+        <i data-lucide="x"></i>
+      </button>
+    </div>
+    <a href="index.html" class="nav-link mobile-link">Anasayfa</a>
+    <a href="hakkimda.html" class="nav-link mobile-link active">Hakkımda</a>
+    <a href="calisma-alanlarim.html" class="nav-link mobile-link">Çalışma Alanlarım</a>
+    <a href="blog.html" class="nav-link mobile-link">Blog</a>
+    <a href="videolar.html" class="nav-link mobile-link">Videolar</a>
+    <a href="iletisim.html" class="nav-link mobile-link">İletişim</a>
+    <button class="btn btn-primary open-appointment-btn" style="width: 100%; margin-top: 1rem;">
+      <i data-lucide="calendar"></i>
+      <span>Randevu Al</span>
+    </button>
+  </div>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-name">Rabia Yalçın Yıldırım</span>
+        <span class="logo-title">Psikolojik Danışman</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Anasayfa</a></li>
+          <li><a href="hakkimda.html" class="nav-link active">Hakkımda</a></li>
+          <li><a href="calisma-alanlarim.html" class="nav-link">Çalışma Alanlarım</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="videolar.html" class="nav-link">Videolar</a></li>
+          <li><a href="iletisim.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <div style="display: flex; align-items: center; gap: 1rem;">
+        <button class="btn btn-primary open-appointment-btn" id="nav-cta-btn">
+          <i data-lucide="calendar"></i>
+          <span>Randevu Al</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobile-toggle" aria-label="Menüyü Aç">
+          <i data-lucide="menu"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="hero" style="padding-top: 9.5rem; padding-bottom: 4rem; background: linear-gradient(135deg, #F9F8F6 0%, #E8EFEB 100%);">
+    <div class="container" style="text-align: center;">
+      <span class="section-subtitle">Özgeçmiş & Yaklaşım</span>
+      <h1 class="section-title" style="font-size: 3rem; margin-top: 0.5rem;">Her Yolculuk, Güvenli Bir Adımla Başlar</h1>
+      <p class="section-desc" style="max-width: 680px; margin: 0 auto;">Her bireyin içsel gücünü yeniden keşfetme yolculuğuna empati, şefkat ve bilimsel metodolojilerle eşlik ediyorum.</p>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT DETAIL SECTION ==================== -->
+  <section class="about section-padding">
+    <div class="container about-grid">
+      <div class="about-portrait-frame">
+        <div class="about-portrait-img">
+          <img src="assets/images/therapist_portrait.jpg?v=2" alt="Rabia Yalçın Yıldırım - Psikolojik Danışman">
+        </div>
+        <div class="about-quote-box glass-badge">
+          "Terapi; bireyin kendi içindeki potansiyeli ve güvenli alanı yeniden keşfetme yolculuğudur."
+        </div>
+      </div>
+
+      <div class="about-content">
+        <h2 style="font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1.3;">Rabia Yalçın Yıldırım Kimdir?</h2>
+        
+        <div class="about-bio">
+          <p>
+            Psikolojik danışman ve bütüncül psikoterapi uygulayıcısı olarak, her bireyin yaşam öyküsünün ve ihtiyaçlarının kendine özgü olduğuna inanıyorum. Bu nedenle danışmanlık sürecimi, bilimsel temellere dayanan ve kişiye özel planlanan bütüncül bir yaklaşımla yürütüyorum.
+          </p>
+          <p>
+            Lisans eğitimimi Balıkesir Üniversitesi Psikolojik Danışmanlık ve Rehberlik (PDR) bölümünde tamamladıktan sonra, mesleki gelişimimi desteklemek amacıyla Psikoterapi Enstitüsü Bütüncül Psikoterapi Eğitimi'ni başarıyla tamamladım.
+          </p>
+          <p>
+            4 yılı aşkın mesleki deneyimim boyunca kaygı, depresyon, travmatik yaşam deneyimleri, ilişki sorunları, öz güven, öz değer ve yaşam krizleri gibi alanlarda danışanlarıma destek oldum.
+          </p>
+          <p>
+            Bütüncül psikoterapi yaklaşımıyla, farklı bilimsel yöntemleri danışanlarımın ihtiyaçlarına göre bir araya getirerek her birey için kendine özgü bir terapi süreci planlıyorum.
+          </p>
+          <p>
+            Benim için terapi; kişinin kendisini güvenle ifade edebildiği, anlaşılmış hissettiği ve yaşamında kalıcı değişimlere adım attığı güvenli bir yolculuktur. Seanslarımda önceliğim; gizlilik, etik ilkeler, empati ve bilimsel yaklaşım çerçevesinde güven veren bir danışmanlık ortamı sunmaktır.
+          </p>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="award"></i></div>
+            <div>
+              <h4 class="feature-title">Kanıta Dayalı Terapi</h4>
+              <p class="feature-desc">BDT ve Şema Terapi odaklı bilimsel yaklaşımlar.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="shield-check"></i></div>
+            <div>
+              <h4 class="feature-title">Etik & Gizlilik</h4>
+              <p class="feature-desc">%100 Danışan gizliliği ve etik ilkelere bağlılık.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="heart-handshake"></i></div>
+            <div>
+              <h4 class="feature-title">Empatık Yaklaşım</h4>
+              <p class="feature-desc">Güvenli, şefkatli ve yargısız dinleme alanı.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon"><i data-lucide="video"></i></div>
+            <div>
+              <h4 class="feature-title">Online & Yüz Yüze</h4>
+              <p class="feature-desc">Esnek randevu seçenekleri ile erişilebilir destek.</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 2rem;">
+          <button class="btn btn-primary open-appointment-btn">
+            <i data-lucide="calendar"></i>
+            <span>Seans Randevusu Al</span>
+          </button>
+          <a href="calisma-alanlarim.html" class="btn btn-secondary">
+            <span>Çalışma Alanlarını İncele</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-name" style="color: #ffffff;">Rabia Yalçın Yıldırım</span>
+          <span class="logo-title">Psikolojik Danışman</span>
+        </div>
+        <p>İçsel yolculuğunuzda güvenli, şeffaf ve profesyonel rehberlik hizmeti.</p>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Hızlı Bağlantılar</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Anasayfa</a></li>
+          <li><a href="hakkimda.html">Hakkımda</a></li>
+          <li><a href="calisma-alanlarim.html">Çalışma Alanlarım</a></li>
+          <li><a href="blog.html">Blog & Makaleler</a></li>
+          <li><a href="videolar.html">Videolar</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">Uzmanlıklar</h4>
+        <ul class="footer-links">
+          <li><a href="calisma-alanlarim.html">Bireysel Danışmanlık</a></li>
+          <li><a href="calisma-alanlarim.html">Çift & İlişki Terapisi</a></li>
+          <li><a href="calisma-alanlarim.html">Kaygı & Stres Yönetimi</a></li>
+          <li><a href="calisma-alanlarim.html">Ergen Danışmanlığı</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="footer-title">İletişim</h4>
+        <ul class="footer-links">
+          <li><i data-lucide="mail" style="width: 14px; margin-right: 6px;"></i> <a href="mailto:rabiayalcin006@gmail.com" style="color: inherit; text-decoration: none;">rabiayalcin006@gmail.com</a></li>
+          <li><i data-lucide="phone" style="width: 14px; margin-right: 6px;"></i> <a href="tel:05395535593" style="color: inherit; text-decoration: none;">+90 (539) 553 55 93</a></li>
+          <li><i data-lucide="map-pin" style="width: 14px; margin-right: 6px;"></i> Kuzguncuk, Üsküdar / İstanbul</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Rabia Yalçın Yıldırım. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- Appointment Modal -->
+  <div class="modal-overlay" id="appointment-modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" id="close-wizard-modal" aria-label="Kapat" onclick="window.closeAllModals()">&times;</button>
+      <div class="modal-body" id="wizard-container"></div>
+    </div>
+  </div>
+
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>

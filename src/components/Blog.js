@@ -2,7 +2,7 @@ import { blogData } from '../data/articles.js';
 import { fetchMediumPosts } from '../utils/mediumFetcher.js';
 import { openModal, closeModal } from '../utils/modal.js';
 
-export async function initBlog(mediumUsername = 'yusufyildirimdev') {
+export async function initBlog(mediumUsername = 'rabiayalcin006') {
   const container = document.getElementById('blog-container') || document.getElementById('blog-grid');
 
   if (!container) return;
@@ -87,7 +87,7 @@ export async function initBlog(mediumUsername = 'yusufyildirimdev') {
           <div class="reader-meta">
             <span><i data-lucide="calendar" style="width: 15px; display: inline;"></i> ${item.date}</span>
             <span><i data-lucide="clock" style="width: 15px; display: inline;"></i> ${item.readTime}</span>
-            <span><i data-lucide="user" style="width: 15px; display: inline;"></i> Yusuf Yıldırım (@yusufyildirimdev)</span>
+            <span><i data-lucide="user" style="width: 15px; display: inline;"></i> Rabia Yalçın (@rabiayalcin006)</span>
           </div>
 
           <img src="${item.image}" alt="${item.title}" class="reader-cover-img">

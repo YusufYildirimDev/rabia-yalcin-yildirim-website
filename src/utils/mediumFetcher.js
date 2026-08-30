@@ -2,10 +2,10 @@ import { blogData } from '../data/articles.js';
 
 /**
  * Fetches published articles from a Medium profile using public RSS-to-JSON API with zero-cache timestamp.
- * @param {string} username - Medium handle (e.g. 'yusufyildirimdev' or '@yusufyildirimdev')
+ * @param {string} username - Medium handle (e.g. 'rabiayalcin006' or '@rabiayalcin006')
  * @returns {Promise<Array>} List of formatted article objects
  */
-export async function fetchMediumPosts(username = 'yusufyildirimdev') {
+export async function fetchMediumPosts(username = 'rabiayalcin006') {
   if (!username) {
     return blogData;
   }
